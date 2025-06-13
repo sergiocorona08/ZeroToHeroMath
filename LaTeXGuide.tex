@@ -1,0 +1,88 @@
+\documentclass{article} % Tipo de documento
+
+\usepackage[utf8]{inputenc} % Codificación
+\usepackage[spanish]{babel} % Idioma
+\usepackage{amsmath, amssymb}
+\usepackage[a4paper, margin=1.5cm]{geometry} % Márgenes de 1.5 cm
+
+\title{Guía de formatos para LaTeX y ejemplos de formulas}
+\author{Sergio Augusto Macías Corona}
+\date{\today} % Fecha actual
+
+\begin{document}
+
+\maketitle
+
+\section{Modo Matemático}
+En línea: para expresiones dentro del texto:
+La ecuación es $a^{10} + \frac{1}{2}$\\
+\\
+Ecuaciones centradas (display mode):
+\[
+a^2 + b^2 = c^2
+\]
+
+Para numerar las ecuaciones del documento
+\begin{equation}
+a^2 + b^2 = c^2
+\end{equation}
+
+\section{Simbolos básicos}
+
+Fracción: $\frac{a}{b}$\\
+Potencia: $x^{2}$\\
+Subindice: $x_{i}$\\
+Raíz cuadrada: $\sqrt{x}$\\
+Raíz n-ésima: $\sqrt[n]{x}$\\
+Sumatoria: $\sum_{i=1}^{n} a_i$\\
+Producto: $\prod_{i=1}^{n} a_i$\\
+Notación prime: $f'(x)$\\
+Derivada: $\frac{dy}{dx}$\\
+Derivada parcial: $\frac{\partial f}{\partial x}$\\
+Integral: $\int_{a}^{b} f(x) dx$\\
+Límite: $\lim_{x \to 0} f(x)$\\
+Aproximado: $\approx$\\
+Pertenece: $\in$\\
+Conjunto vacío: $\emptyset$\\
+Infinito: $\infty$\\
+
+\section{Matrices y Sistemas de ecuaciones}
+
+\[
+\begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix}
+\]
+
+\[
+\begin{cases}
+x + y = 1 \\
+2x - y = 3
+\end{cases}
+\]
+
+\section{Letras Griegas}
+$\alpha$\\
+$\beta$\\
+$\gamma$\\
+$\delta$\\
+$\epsilon$\\
+$\lambda$\\
+$\pi$\\
+$\sigma$\\
+$\phi$\\
+$\omega$\\
+
+\section{Texto dentro de formulas}
+\[
+x = 0 \quad \text{si y sólo si} \quad y = 0
+\]
+
+\section{Atajos utiles}
+\begin{align*}
+a + b &= c \\
+d + e &= f
+\end{align*}
+
+\end{document}
