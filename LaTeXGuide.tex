@@ -1,5 +1,5 @@
 \documentclass{article} % Tipo de documento
-
+\usepackage{amsthm}
 \usepackage[utf8]{inputenc} % Codificación
 \usepackage[spanish]{babel} % Idioma
 \usepackage{amsmath, amssymb}
@@ -63,28 +63,83 @@ x + y = 1 \\
 \]
 
 \section{Letras Griegas}
-$\alpha$\\
-$\beta$\\
-$\gamma$\\
-$\delta$\\
-$\epsilon$\\
-$\lambda$\\
-$\pi$\\
-$\sigma$\\
-$\phi$\\
-$\omega$\\
+\begin{itemize}
+  \item $\alpha$
+  \item $\beta$
+  \item $\gamma$
+  \item $\delta$
+  \item $\epsilon$
+  \item $\lambda$
+  \item $\pi$
+  \item $\sigma$
+  \item $\phi$
+  \item $\omega$
+\end{itemize}
+
+
+\section{Relaciones y símbolos lógicos}
+
+Pertenencia: $\in$ \\
+No pertenece: $\notin$ \\
+Subconjunto: $\subset$ \\
+Subconjunto propio: $\subsetneq$ \\
+Inclusión: $\subseteq$ \\
+No inclusión: $\nsubseteq$ \\
+Existencia: $\exists$ \\
+Para todo: $\forall$ \\
+Negación: $\neg$ \\
+Y lógico (conjunción): $\land$ \\
+O lógico (disyunción): $\lor$ \\
+Implicación: $\implies$ \\
+Equivalencia: $\iff$ \\
+Divisibilidad: $a \mid b$ \\
+No divisibilidad: $a \nmid b$ \\
+Factorial: $n!$
 
 \section{Texto dentro de formulas}
 \[
 x = 0 \quad \text{si y sólo si} \quad y = 0
 \]
 
+\section{Funciones comunes}
+
+Seno: $\sin(x)$ \\
+Coseno: $\cos(x)$ \\
+Tangente: $\tan(x)$ \\
+Cotangente: $\cot(x)$ \\
+Secante: $\sec(x)$ \\
+Cosecante: $\csc(x)$ \\
+Logaritmo natural: $\ln(x)$ \\
+Logaritmo base $b$: $\log_b(x)$ \\
+Valor absoluto: $|x|$ \\
+Parte entera: $\lfloor x \rfloor$ \\
+Parte techo: $\lceil x \rceil$
+
 \section{Atajos utiles}
 \begin{align*}
 a + b &= c \\
 d + e &= f
 \end{align*}
-
 \textbf{Texto en negritas}
+
+\section{Ambientes de Teorema, Definición y Ejemplo}
+
+\newtheorem{teorema}{Teorema}
+\newtheorem{definicion}{Definición}
+\newtheorem{ejemplo}{Ejemplo}
+
+\begin{definicion}
+Un número primo es aquel que sólo tiene dos divisores: $1$ y él mismo.
+\end{definicion}
+
+\begin{teorema}
+Si $p$ es un número primo y $p \mid ab$, entonces $p \mid a$ o $p \mid b$.
+\end{teorema}
+
+\begin{ejemplo}
+El número $7$ es primo ya que sólo es divisible entre $1$ y $7$.
+\end{ejemplo}
+
+
 
 \end{document}
