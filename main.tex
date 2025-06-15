@@ -1,10 +1,10 @@
 \documentclass{article} % Tipo de documento
 \usepackage[a4paper, margin=1.5cm]{geometry} % Márgenes de 1.5 cm
 \usepackage[utf8]{inputenc} % Codificación
-\usepackage[spanish]{babel} % Idioma
 \usepackage[T1]{fontenc} %Nos sirve para agregar texto
 \usepackage{amsmath, amssymb}
-
+\usepackage{graphicx}
+\usepackage{float}
 
 \title{Zero to Hero, Math}
 \author{Sergio Augusto Macías Corona}
@@ -240,5 +240,102 @@ Estimating involves using rounded numbers to quickly approximate calculations. I
 \]
 
 \section{Level 2: Advanced Arithmetic / Pre - Algebra}
+
+\subsection{Exponents and Square Roots}
+An exponent is the number which says how many times to multiply the base. A square root is finding the number that is multiplied by itself to get the number under the radical. The square root is opposite of a number being squared, meaning with the exponent of two.\\
+\\
+There are 8 important laws of exponents to know that will make it easier for us to solve and analyze them.
+\\
+\textbf{Zero Rule:}\\
+Any number to the power of 0 equals 1. $a^{0} = 1$\\
+Example:\\
+\[
+5^{0} = 1
+\]
+
+\noindent\textbf{One Rule:}\\
+If the exponent is 1, the result is the base itself $a^{1} = a$\\
+Example:\\
+\[
+3^{1} = 3
+\]
+
+\noindent\textbf{Negative Exponent Rule:}\\
+A negative exponent flips the number into a fraction $a^{-n} = frac{1}{a^{-n}}$\\
+Example:\\
+\[
+2^{-3} = \frac{1}{2^{3}} = \frac{1}{8} 
+\]
+
+\noindent\textbf{Product Rule:}\\
+When multiplying the same bases, add the exponents $a^{m} \times a^{n} = a^{m + n}$\\
+Example:\\
+\[
+x^{2} \times x^{4} = x^{2 + 4} = x^{6}
+\]
+
+\noindent\textbf{Quotient Rule:}\\
+When dividing the same bases, subtract the exponents $\frac{a^{m}}{a^{n}}$\\
+Example:\\
+\[
+x^{2} \times x^{4} = x^{2 + 4} = x^{6}
+\]
+
+\noindent\textbf{Power of a Power Rule:}\\
+Multiply the exponents $(a^{m})^{n}$\\
+Example:\\
+\[
+(a^{3})^{2} = a^3\times 2 = a^{6} = 64
+\]
+
+\noindent\textbf{Fractional Exponent Rule:}\\
+A fractional exponent represents a root $a^{\frac{m}{n}} = \sqrt[n]{a^{m}}$\\
+Example:\\
+\[
+8^{\frac{3}{2}} = \sqrt[3]{8^{2}} = \sqrt[3]{64} = 4
+\]
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Exponent.png}
+    \caption{Quick overview of how the exponent works.}
+    \label{fig:etiqueta}
+\end{figure}
+
+The square root of a number is a value that, when multiplied by itself, equals the original number. They can be divided into several types.
+\\
+\textbf{Basic Examples}\\
+\\
+\textbf{Exact root:}\\
+Example:\\
+\[
+\sqrt{9} = 3 \times 3 = 9
+\]
+\\
+\textbf{Non-exact root:}\\
+Example:\\
+\[
+\sqrt{2} = 1.414 \text{ it is irrational, it has infinite decimals}
+\]
+\textbf{Key Properties}\\
+\\
+\textbf{For positive numbers only:}\\
+$\sqrt{-4} \text{ is not a real number (but exists in complex numbers like \(2i\)).}$
+\\
+\textbf{Square root of zero:}\\
+$\sqrt{0} = 0$
+\\
+\textbf{Relationship with exponents:}\\
+$\sqrt{x} = x^{\frac{1}{2}}$
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Root.png}
+    \caption{Quick overview of how the roots works.}
+    \label{fig:etiqueta}
+\end{figure}
+
+\subsection{Scientific notation}
 
 \end{document}
