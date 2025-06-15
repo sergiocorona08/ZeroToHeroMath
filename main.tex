@@ -5,6 +5,7 @@
 \usepackage{amsmath, amssymb}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{forest}
 
 \title{Zero to Hero, Math}
 \author{Sergio Augusto Macías Corona}
@@ -337,5 +338,72 @@ $\sqrt{x} = x^{\frac{1}{2}}$
 \end{figure}
 
 \subsection{Scientific notation}
+Scientific notation is a way of writing numbers that is commonly used in science for its convenience and to reduce the likelihood of making errors. One of the typical examples is the mass of the electron, which in decimal notation is:
+\[
+0.000000000000000000000000000000911 \text{ Kg}
+\]
+Written in scientific notation it is:
+\[
+9.11 \times 10^{-31} \text{ Kg}
+\]
+A number written in scientific notation consists of two parts:\\
+\textbf{The mantissa:} decimal part (on the left), whose whole number is a single digit and different from $0$.\\
+\textbf{The order of magnitude:} power of base $10$ (on the right).\\
+As the last example, the mantissa is $9.11$ and the order of magnitude is $10^{31}$ (base $10$ power and negative exponent $-31$):
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{SciNot.jpg}
+    \caption{Quick overview of how the Scientific Notation works.}
+    \label{fig:etiqueta}
+\end{figure}
+
+\subsection{Divisibility rules}
+A divisibility rule is a heuristic for determining whether a positive integer can be evenly divided by another (with no remainder left over). For example, determining if a number is even is as simple as checking to see if its last digit is $2, 4, 6, 8$ or $0$. Multiple divisibility rules applied to the same number in this way can help quickly determine its prime factorization without having to guess at its prime factors.\\
+A positive integer $N$ is divisible by:\\
+$2$ If the last digit of $N$ is $2, 4, 6, 8,$ or $0$;\\
+$3$ if the sum of digits of $N$ is a multiple of $3$;\\
+$4$ if the last $2$ digits of $N$ are a multiple of $4$;\\
+$5$ if the last digit of $N$ is either $0$ or $5$;\\
+$6$ if $N$ is divisible by both $2$ and $3$;\\
+$7$ if subtracting twice the last digit of $N$ from the remaining digits gives a multiple of $7$;\\
+$8$ if the last $3$ digits of $N$ are a multiple of  $8$;\\
+$9$ if the sum of digits of $N$ is a multiple of $9$;\\
+$10$ if the last digit of $N$ is $0$;\\
+$11$ if the difference of the alternating sum of digits of $N$ is a multiple of $11$;\\
+$12$ if $N$ is divisible by both $3$ and $4$;\\
+
+\subsection{Prime Factors}
+Prime factors are the building blocks of numbers, they're the prime numbers that multiply together to create the original number. For example, The number $15$ can be broken down into $3 \times 5$. Since both $3$ and $5$ are prime numbers, they're the prime factors of $15$.\\
+They are two methods to find Prime Factors:\\
+\textbf{Factor tree}\\
+Start with your number and find any two factors. Keep breaking down each factor until you're left with only prime numbers.\\
+\begin{center}
+\begin{forest}
+for tree={circle,draw, l sep=20pt, s sep=15pt}
+[24
+    [4
+        [2]
+        [2]
+    ]
+    [6
+        [2]
+        [3]
+    ]
+]
+\end{forest}
+\end{center}
+\textbf{Division by primes}\\
+Divide by the smallest prime ($2$) until you can't, then, continue with the other primes ($3, 5, 7 \dots$) until you reach $1$.\\
+For example:\\
+\[
+36 \div 2 = 18\\
+18 \div 2 = 9\\
+9 \div 3 = 3\\
+3 \div 3 = 1\\
+\]
+Prime factors: $2 \times 2 \times 3 \times 3$ (or $2^{2} \times 3^{2}$).
+
+\section{Level 3: Algebra I}
+\subsection{Variables and algebraic expressions}
 
 \end{document}
