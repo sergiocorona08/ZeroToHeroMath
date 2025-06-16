@@ -462,11 +462,179 @@ Physics: $F = ma$ (force $=$ mass $\times$ acceleration).\\
 $I = Prt$ (principal $\times$ rate $\times$ time).\\
 
 \textbf{Geometry:}\\
-$A = lw$ (length $\times$ width).\\
+$A = lw$ (length $\times$ width).
+\subsection{First Degree linear equations}
+First-degree equations, also known as linear equations, have the general form $ax \times b = c$, where $a, b$, and $c$ are real numbers and $a \neq 0$. In this type of equation, the variable $x$ is raised to the first power (degree one), hence the name "first degree equation".\\
+In the expression $ax + b = c$, the elements $a, x, b$, and $c$ have specific roles. $a$ is the coefficient of the variable $x$, $b$ is the independent term, and $c$ is the result of the expression.\\
+\textbf{Solution of a First Degree Equation}\\
+The solution of a first-degree equation is the value that, when substituted for the variable, makes the equality true. Equations can be manipulated in various ways, changing the position of terms or performing equivalent operations on both sides of the expression. These transformations are useful for isolating the variable $x$ and finding its solution.\\
 \\
-\subsection{First degree linear equations}
+\textbf{Solving Step-by-Step}\\
+To solve:\\
+\[
+ax + b = 0
+\]
+1.- Isolate the term with $x$\\
+\[
+ax = -b 
+\]
+2.- Solve for $x$\\
+\[
+x = \frac{-b}{a}
+\]
+\subsection{Systems of linear equations (2x2)}
+A system of two linear equations with two variables (typically $x$ and $y$) has the general form:
+\[
+\begin{cases}
+a_1x + b_1y = c_1 \\
+a_2x + b_2y = c_2
+\end{cases}
+\]
+There are different methods for solving systems of 2x2 linear equations.\\
+\textbf{Substitution Method}\\
+Steps:\\
+1. Solve one equation for one variable (e.g., $x$ in the first equation).\\
 
+2. Substitute this expression into the other equation.\\
 
+3. Solve for the second variable ($y$).\\
 
+4. Find the first variable ($x$) by substituting back the value obtained for the second variable.\\
+
+\textbf{Example of Application}\\
+
+Consider the system of equations:
+\[
+\begin{cases} 
+x + y = 5 \\ 
+2x - y = 1 
+\end{cases}
+\]
+
+1. Solve for $x$ in the first equation: $x = 5 - y$.
+
+2. Substitute into the second equation: $2(5 - y) - y = 1 \rightarrow 10 - 3y = 1$.
+
+3. Solve for $y$: $-3y = -9 \rightarrow y = 3$.
+
+4. Find $x$ by substitution: $x = 5 - 3 = 2$.\\
+
+\textbf{Solution}: The solution to the system is $x = 2$, $y = 3$.\\
+\\
+\textbf{Elimination/Addition and Subtraction Method}\\
+Steps:\\
+1. Align both equations with like terms in columns.\\
+
+2. Multiply one or both equations by constants to make the coefficients of one variable opposites.\\
+
+3. Add the equations to eliminate one variable.\\
+
+4. Solve for the remaining variable.\\
+
+5. Substitute back to find the eliminated variable.\\
+
+\textbf{Example of Application}\\
+
+Consider the system of equations:
+\[
+\begin{cases} 
+2x + 3y = 8 \\ 
+4x - y = 6 
+\end{cases}
+\]
+
+1. Original system:
+\[
+\begin{cases} 
+2x + 3y = 8 \\ 
+4x - y = 6 
+\end{cases}
+\]
+
+2. Multiply the second equation by 3 to match coefficients:
+\[
+\begin{cases} 
+2x + 3y = 8 \\ 
+12x - 3y = 18 
+\end{cases}
+\]
+
+3. Add the equations to eliminate $y$:\\
+\[
+14x = 26 \rightarrow x = \frac{26}{14} = \frac{13}{7}
+\]
+
+4. Substitute $x = \frac{13}{7}$ into the first equation:\\
+\[
+2(\frac{13}{7}) + 3y = 8 \rightarrow \frac{26}{7} + 3y = 8
+\]
+
+5. Solve for $y$:\\
+\[
+3y = 8 - \frac{26}{7} = \frac{30}{7} \rightarrow y = \frac{10}{7}
+\]
+
+\textbf{Solution}: The solution to the system is:
+\[
+x = \frac{13}{7}, y = \frac{10}{7}
+\]
+\subsection{First Degree Inequalities}
+A first degree inequality is an algebraic inequality that can be expressed in one of the forms:
+\[
+ax + b > 0, \quad ax + b < 0, \quad ax + b \geq 0, \quad \text{or} \quad ax + b \leq 0,
+\]
+where:
+\begin{itemize}
+    \item $a$ and $b$ are real numbers ($a \neq 0$)
+    \item $x$ is the unknown variable
+    \item The symbols $>$, $<$, $\geq$, $\leq$ represent inequality relations
+\end{itemize}
+
+\textbf{Solution Method}\\
+Steps:\\
+1. Isolate the term containing $x$ on one side of the inequality.\\
+
+2. Divide or multiply both sides by the coefficient of $x$.\\
+   \textbf{Important}: If multiplying or dividing by a negative number, reverse the inequality sign.\\
+
+\textbf{Example of Application}
+
+Consider the inequality:
+\[
+3x - 5 \leq 7
+\]
+
+1. Isolate $3x$:
+\[
+3x \leq 7 + 5 \quad \Rightarrow \quad 3x \leq 12
+\]
+
+2. Divide by 3 (since $3 > 0$, the inequality sign remains the same):
+\[
+x \leq \frac{12}{3} \quad \Rightarrow \quad x \leq 4
+\]
+
+\textbf{Solution}: All real numbers less than or equal to 4.\\
+In interval notation: $(-\infty, 4]$.
+
+\textbf{Special Cases}
+
+1. \textbf{Multiplying/Dividing by Negative Numbers}:\\
+For $-2x + 3 > 7$:
+\[
+-2x > 4 \quad \Rightarrow \quad x < -2 \quad \text{(sign reversed)}
+\]
+
+2. \textbf{No Solution Case}:\\
+For $5x - 4 \geq 5x + 1$:
+\[
+-4 \geq 1 \quad \text{(false statement)}
+\]
+
+3. \textbf{Infinite Solutions Case}:\\
+For $3x + 2 \leq 3x + 2$:
+\[
+0 \leq 0 \quad \text{(always true)}
+\]
 
 \end{document}
