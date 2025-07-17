@@ -827,4 +827,253 @@ Combine like terms:
 \[
 x^a \cdot x^b = x^{a+b}
 \]
+
+\subsection{Quadratic Equations}
+
+The standard form is:
+\[ ax^2 + bx + c = 0 \quad (a \neq 0) \]
+
+\textbf{1. Factoring Method}
+
+Best when the quadratic can be factored into two binomials. Here's the detailed process:
+
+\[ x^2 + 5x + 6 = 0 \]
+
+\textbf{Step 1: Find two numbers that}
+\begin{itemize}
+    \item Multiply to give \( a \times c \) (here \( 1 \times 6 = 6 \))
+    \item Add to give \( b \) (here \( 5 \))
+\end{itemize}
+
+For our example, the numbers are 2 and 3 because:
+\[ 2 \times 3 = 6 \]
+\[ 2 + 3 = 5 \]
+
+\textbf{Step 2: Rewrite the middle term using these numbers}
+\[ x^2 + 2x + 3x + 6 = 0 \]
+
+\textbf{Step 3: Factor by grouping}
+\[ (x^2 + 2x) + (3x + 6) = 0 \]
+\[ x(x + 2) + 3(x + 2) = 0 \]
+
+\textbf{Step 4: Factor out the common binomial}
+\[ (x + 2)(x + 3) = 0 \]
+
+\textbf{Step 5: Set each factor equal to zero}
+\[ x + 2 = 0 \quad \text{or} \quad x + 3 = 0 \]
+\[ x = -2 \quad \text{or} \quad x = -3 \]
+
+\boxed{\textbf{Key Points About Factoring:}}
+\begin{itemize}
+    \item Only works when the quadratic is factorable
+    \item Always check your factoring by multiplying back
+    \item Works best when \( a = 1 \)
+    \item If \( a \neq 1 \), use the "AC method" (more advanced)
+\end{itemize}
+
+\textbf{When Factoring Fails:} Use the quadratic formula instead.
+
+2. \textbf{Quadratic Formula} (always works):
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]
+Example for \( 2x^2 - 4x - 6 = 0 \):
+\[
+x = \frac{4 \pm \sqrt{(-4)^2 - 4(2)(-6)}}{2(2)}
+\]
+\[
+x = \frac{4 \pm \sqrt{16 + 48}}{4} = \frac{4 \pm 8}{4}
+\]
+Solutions: \( x = 3 \) or \( x = -1 \)
+
+\boxed{\textbf{Key Points:}}
+\begin{itemize}
+    \item Always set equation to \( = 0 \) first
+    \item \( b^2 - 4ac \) is called the discriminant
+    \item If discriminant is positive: 2 real solutions
+    \item If zero: 1 real solution
+    \item If negative: no real solutions (but 2 complex ones)
+\end{itemize}
+\subsection{Completing the Square}
+
+This method works for any quadratic equation and is useful when factoring is difficult. Here's the detailed process:
+
+\[ 2x^2 + 8x - 10 = 0 \]
+
+\textbf{Step 1: Divide by the coefficient of $x^2$ (if $a \neq 1$)}
+\[ x^2 + 4x - 5 = 0 \]
+
+\textbf{Step 2: Move the constant term to the right side}
+\[ x^2 + 4x = 5 \]
+
+\textbf{Step 3: Complete the square}
+\begin{itemize}
+    \item Take half of the $x$-coefficient: $\frac{4}{2} = 2$
+    \item Square it: $2^2 = 4$
+    \item Add to both sides: 
+\end{itemize}
+\[ x^2 + 4x + 4 = 5 + 4 \]
+
+\textbf{Step 4: Write as perfect square and simplify}
+\[ (x + 2)^2 = 9 \]
+
+\textbf{Step 5: Solve for $x$}
+\[ x + 2 = \pm 3 \]
+\[ x = -2 \pm 3 \]
+Solutions: $x = 1$ or $x = -5$
+
+\boxed{\textbf{Key Points About Completing the Square:}}
+\begin{itemize}
+    \item Works for any quadratic equation
+    \item Essential for deriving the quadratic formula
+    \item Useful for finding vertex form of parabola
+    \item Always maintain equation balance
+\end{itemize}
+
+\textbf{When to Use:} When you need exact solutions and factoring is not possible.
+
+\subsection{Systems of Nonlinear Equations}
+
+A system of nonlinear equations consists of two or more equations where at least one equation is nonlinear (not a straight line). These systems typically have:
+
+\[
+\begin{cases}
+\text{Equation 1: } & \text{Nonlinear (quadratic, exponential, etc.)} \\
+\text{Equation 2: } & \text{Can be linear or nonlinear}
+\end{cases}
+\]
+
+\textbf{Key Characteristics:}
+\begin{itemize}
+    \item May have \boxed{\textbf{multiple solutions}} (unlike linear systems)
+    \item Solutions represent \boxed{\textbf{intersection points}} of the graphs
+    \item Can involve polynomials, roots, exponentials, or trigonometric functions
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{nonlinear.jpg}
+    \caption{Here we can see how many solutions we have.}
+    \label{fig:etiqueta}
+\end{figure}
+\textbf{Solution Methods with Examples:}
+
+1. \textbf{Substitution Method (Best when one equation is simple)}
+\[
+\text{Example System: }
+\begin{cases}
+x^2 + y = 10 \\
+y = 3x + 2
+\end{cases}
+\]
+
+\textbf{Step-by-Step:}
+\begin{enumerate}
+    \item Solve linear equation for $y$: $y = 3x + 2$
+    \item Substitute into nonlinear equation:
+    \[ x^2 + (3x + 2) = 10 \]
+    \item Simplify and solve:
+    \[ x^2 + 3x - 8 = 0 \]
+    \[ x = \frac{-3 \pm \sqrt{9 + 32}}{2} \approx 1.7 \text{ or } -4.7 \]
+    \item Find corresponding $y$-values for complete solutions
+\end{enumerate}
+
+2. \textbf{Elimination Method (When terms can cancel)}
+\[
+\text{Example System: }
+\begin{cases}
+x^2 + y^2 = 25 \\
+x^2 - y = 5
+\end{cases}
+\]
+
+\textbf{Step-by-Step:}
+\begin{enumerate}
+    \item Subtract equations to eliminate $x^2$:
+    \[ (x^2 + y^2) - (x^2 - y) = 25 - 5 \]
+    \item Simplify:
+    \[ y^2 + y - 20 = 0 \]
+    \item Solve quadratic:
+    \[ y = 4 \text{ or } -5 \]
+    \item Back-substitute to find $x$-values
+\end{enumerate}
+
+\boxed{\textbf{Critical Notes:}}
+\begin{itemize}
+    \item \textbf{Always check all solutions} in original equations
+    \item \textbf{Graphical verification} helps understand solutions
+    \item \textbf{No solution cases} occur when graphs don't intersect
+    \item \textbf{Complex solutions} may exist (involving $i=\sqrt{-1}$)
+\end{itemize}
+
+\textbf{Visualization Example:}
+The system $\begin{cases}y = e^x \\ y = x^2 + 1\end{cases}$ has two real solutions where the exponential curve intersects the parabola.
+
+\subsection{Functions: Domain and Range}
+
+\textbf{Function Concept:}
+A function is a relation where each input has \boxed{\textbf{exactly one output}}. 
+
+\[
+f: x \rightarrow y \quad \text{or} \quad y = f(x)
+\]
+
+\begin{itemize}
+    \item $x$ = input (independent variable)
+    \item $y$ = output (dependent variable)
+    \item Works like a machine: one input $\rightarrow$ one output
+\end{itemize}
+
+\textbf{Domain:}
+All possible \boxed{\textbf{input values}} ($x$-values) for which the function is defined.
+
+\textbf{Range:} 
+All possible \boxed{\textbf{output values}} ($y$-values) the function can produce.
+
+\textbf{Examples:}
+
+1. \textbf{Linear Function}
+\[
+f(x) = 2x + 1
+\]
+\begin{itemize}
+    \item Domain: All real numbers $\mathbb{R}$ (no restrictions)
+    \item Range: All real numbers $\mathbb{R}$
+\end{itemize}
+
+2. \textbf{Square Root Function}
+\[
+f(x) = \sqrt{x}
+\]
+\begin{itemize}
+    \item Domain: $x \geq 0$ (can't take square root of negatives)
+    \item Range: $y \geq 0$ (outputs are never negative)
+\end{itemize}
+
+3. \textbf{Quadratic Function}
+\[
+f(x) = x^2
+\]
+\begin{itemize}
+    \item Domain: All real numbers $\mathbb{R}$
+    \item Range: $y \geq 0$ (squares are always non-negative)
+\end{itemize}
+
+\boxed{\textbf{How to Find Domain:}}
+\begin{enumerate}
+    \item Look for values that would:
+    \begin{itemize}
+        \item Make denominators zero
+        \item Result in negative square roots
+        \item Cause logarithms of non-positive numbers
+    \end{itemize}
+    \item Exclude problematic values
+\end{enumerate}
+
+\boxed{\textbf{Visualization Tip:}}
+\begin{itemize}
+    \item Domain = Projection on $x$-axis
+    \item Range = Projection on $y$-axis
+\end{itemize}
+
+
 \end{document}
