@@ -1075,5 +1075,144 @@ f(x) = x^2
     \item Range = Projection on $y$-axis
 \end{itemize}
 
+\subsection{Quadratic Inequalities}
+
+A quadratic inequality has the general form:
+\[
+ax^2 + bx + c \gtrless 0 \quad \text{(where } a \neq 0\text{)}
+\]
+where $\gtrless$ can be $>$, $<$, $\geq$, or $\leq$.
+
+\boxed{\textbf{Solution Method:}}
+\begin{enumerate}
+    \item \textbf{Find the roots} by solving $ax^2 + bx + c = 0$
+    \item \textbf{Sketch the parabola} using the roots and vertex
+    \item \textbf{Determine the solution regions} based on the inequality sign
+\end{enumerate}
+
+\textbf{Detailed Example:}
+\[
+x^2 - 5x + 6 > 0
+\]
+
+\textbf{Step 1: Find the roots}
+\[
+x^2 - 5x + 6 = 0 \implies (x-2)(x-3) = 0
+\]
+Roots: $x=2$ and $x=3$
+
+\textbf{Step 2: Sketch the parabola}
+\begin{itemize}
+    \item Opens upwards (since $a=1>0$)
+    \item Vertex at $x=\frac{5}{2}=2.5$
+    \item Crosses x-axis at $x=2$ and $x=3$
+\end{itemize}
+
+\textbf{Step 3: Determine solution regions}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Interval & Test Point & Sign of $(x-2)(x-3)$ & Satisfies $>0$? \\ \hline
+$x<2$ & $x=0$ & $(+)(+)=+$ & Yes \\ \hline
+$2<x<3$ & $x=2.5$ & $(+)(-)=-$ & No \\ \hline
+$x>3$ & $x=4$ & $(+)(+)=+$ & Yes \\ \hline
+\end{tabular}
+\end{center}
+
+\textbf{Solution:} $x < 2$ or $x > 3$ \\
+In interval notation: $(-\infty, 2) \cup (3, \infty)$
+
+\boxed{\textbf{Special Cases:}}
+\begin{itemize}
+    \item \textbf{No real roots} (e.g., $x^2 + 1 > 0$): Always true if $a>0$
+    \item \textbf{Double root} (e.g., $(x-2)^2 \geq 0$): True for all $x$ except at root when $>0$
+\end{itemize}
+
+\boxed{\textbf{Key Rules:}}
+\begin{itemize}
+    \item For $ax^2 + bx + c > 0$: Choose intervals where parabola is above x-axis
+    \item For $ax^2 + bx + c < 0$: Choose intervals where parabola is below x-axis
+    \item Always consider if inequality is strict ($>$, $<$) or inclusive ($\geq$, $\leq$)
+\end{itemize}
+
+\subsection{Rational Functions}
+
+A rational function is the ratio of two polynomials:
+
+\[
+f(x) = \frac{P(x)}{Q(x)} \quad \text{where } Q(x) \neq 0
+\]
+
+\boxed{\textbf{Key Features:}}
+\begin{itemize}
+    \item \textbf{Vertical Asymptotes:} Occur where $Q(x) = 0$ (unless factors cancel)
+    \item \textbf{Horizontal Asymptotes:} Depend on degrees of $P(x)$ and $Q(x)$
+    \item \textbf{Holes:} Points where $P(x)$ and $Q(x)$ share common factors
+    \item \textbf{Domain:} All real numbers except vertical asymptotes and holes
+\end{itemize}
+
+\textbf{Example 1: Basic Function}
+\[
+f(x) = \frac{1}{x-2}
+\]
+
+\begin{itemize}
+    \item Vertical asymptote: $x = 2$
+    \item Horizontal asymptote: $y = 0$ (since denominator has higher degree)
+    \item Domain: $\mathbb{R} \setminus \{2\}$
+    \item Range: $\mathbb{R} \setminus \{0\}$
+\end{itemize}
+
+\textbf{Example 2: Function with Hole}
+\[
+f(x) = \frac{x^2-4}{x^2-x-2} = \frac{(x-2)(x+2)}{(x-2)(x+1)}
+\]
+
+\begin{itemize}
+    \item Hole at $x=2$ (common factor cancels)
+    \item Vertical asymptote: $x=-1$
+    \item Horizontal asymptote: $y=1$ (same degree, ratio of leading coefficients)
+    \item Domain: $\mathbb{R} \setminus \{-1,2\}$
+\end{itemize}
+
+\boxed{\textbf{Graphing Steps:}}
+\begin{enumerate}
+    \item Factor numerator and denominator completely
+    \item Simplify (identify holes)
+    \item Find vertical asymptotes (zeros of simplified denominator)
+    \item Determine horizontal/oblique asymptotes:
+    \begin{itemize}
+        \item If deg(P) $<$ deg(Q): $y=0$
+        \item If deg(P) $=$ deg(Q): $y=\frac{a_n}{b_n}$
+        \item If deg(P) $=$ deg(Q)+1: oblique asymptote (do polynomial division)
+    \end{itemize}
+    \item Find intercepts:
+    \begin{itemize}
+        \item x-intercepts: zeros of numerator
+        \item y-intercept: evaluate $f(0)$
+    \end{itemize}
+    \item Analyze behavior near asymptotes
+\end{enumerate}
+
+\textbf{Example 3: With Oblique Asymptote}
+\[
+f(x) = \frac{x^2+1}{x} = x + \frac{1}{x}
+\]
+
+\begin{itemize}
+    \item Vertical asymptote: $x=0$
+    \item Oblique asymptote: $y=x$ (from polynomial division)
+    \item Domain: $\mathbb{R} \setminus \{0\}$
+    \item No horizontal asymptote (degree difference = 1)
+\end{itemize}
+
+\boxed{\textbf{Important Notes:}}
+\begin{itemize}
+    \item Always simplify first to identify holes
+    \item The graph never crosses vertical asymptotes
+    \item Graphs may cross horizontal/oblique asymptotes
+    \item End behavior is determined by the leading terms
+\end{itemize}
+
 
 \end{document}
