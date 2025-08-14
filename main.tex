@@ -1214,5 +1214,206 @@ f(x) = \frac{x^2+1}{x} = x + \frac{1}{x}
     \item End behavior is determined by the leading terms
 \end{itemize}
 
+\section{Level 5 — Geometry}
+\subsection{Points, lines, planes}
 
+\textbf{1. Points}
+\begin{itemize}
+    \item Represent a \boxed{\textbf{location}} in space
+    \item No size or dimension (0-dimensional)
+    \item Named with capital letters: $A$, $B$, $C$, etc.
+    \item Example: Point $A$ at coordinates $(1, 2, 3)$
+\end{itemize}
+
+\textbf{2. Lines}
+\begin{itemize}
+    \item Straight \boxed{\textbf{1-dimensional}} object extending infinitely
+    \item Defined by two points or a point and direction
+    \item Forms:
+    \begin{itemize}
+        \item Parametric: $\vec{r} = \vec{a} + t\vec{b}$
+        \item Cartesian: $\frac{x-x_0}{a} = \frac{y-y_0}{b} = \frac{z-z_0}{c}$
+    \end{itemize}
+    \item Example: Line through $A(1,0)$ and $B(0,1)$:
+    \[ y = -x + 1 \]
+\end{itemize}
+
+\textbf{3. Planes}
+\begin{itemize}
+    \item Flat \boxed{\textbf{2-dimensional}} surface extending infinitely
+    \item Defined by:
+    \begin{itemize}
+        \item 3 non-collinear points
+        \item A point and normal vector
+    \end{itemize}
+    \item General equation: $ax + by + cz = d$
+    \item Example: $xy$-plane equation:
+    \[ z = 0 \]
+\end{itemize}
+
+\boxed{\textbf{Key Relationships:}}
+\begin{itemize}
+    \item Two points determine a unique line
+    \item Three non-collinear points determine a unique plane
+    \item A line and point not on it determine a unique plane
+    \item Two intersecting lines determine a unique plane
+\end{itemize}
+
+\textbf{Visualization:}
+\begin{itemize}
+    \item Points: Dots ($\bullet$)
+    \item Lines: Straight arrows with two arrowheads ($\leftrightarrow$)
+    \item Planes: Flat rectangles or parallelograms
+\end{itemize}
+
+\subsection{Types of Angles}
+
+\textbf{Basic Definition:}
+An angle is formed by two rays sharing a common endpoint (vertex).
+
+\textbf{Classification by Measure:}
+
+1. \textbf{Acute Angle}
+\begin{itemize}
+    \item Measures between \boxed{0^\circ} and \boxed{90^\circ}
+    \item Example: $45^\circ$, $60^\circ$
+\end{itemize}
+
+2. \textbf{Right Angle} 
+\begin{itemize}
+    \item Exactly \boxed{90^\circ}
+    \item Symbol: Small square $\square$ at vertex
+    \item Forms perfect "L" shape
+\end{itemize}
+
+3. \textbf{Obtuse Angle}
+\begin{itemize}
+    \item Measures between \boxed{90^\circ} and \boxed{180^\circ}
+    \item Example: $100^\circ$, $135^\circ$
+\end{itemize}
+
+\boxed{\textbf{Special Cases:}}
+\begin{itemize}
+    \item Straight angle = $180^\circ$ (forms a line)
+    \item Reflex angle = Between $180^\circ$ and $360^\circ$
+    \item Full rotation = $360^\circ$
+\end{itemize}
+
+\textbf{Key Relationships:}
+\begin{itemize}
+    \item Complementary: Two angles summing to $90^\circ$
+    \item Supplementary: Two angles summing to $180^\circ$
+    \item Adjacent: Share vertex and side
+\end{itemize}
+
+\textbf{Notation:}
+\begin{itemize}
+    \item Named by vertex: $\angle A$
+    \item Or by three points: $\angle BAC$
+\end{itemize}
+\subsection{Properties of Triangles}
+
+\textbf{Basic Definition:}
+A polygon with three sides and three angles.
+
+\boxed{\textbf{Angle Properties:}}
+\begin{itemize}
+    \item Sum of interior angles = \boxed{180^\circ}
+    \[
+    \angle A + \angle B + \angle C = 180^\circ
+    \]
+    \item Exterior angle equals sum of opposite interior angles
+    \[
+    \angle D = \angle A + \angle B
+    \]
+\end{itemize}
+
+\boxed{\textbf{Side Properties:}}
+\begin{itemize}
+    \item Triangle Inequality: Sum of any two sides > third side
+    \[
+    AB + BC > AC
+    \]
+    \item Pythagorean Theorem (for right triangles):
+    \[
+    a^2 + b^2 = c^2
+    \]
+\end{itemize}
+
+\textbf{Types by Sides:}
+\begin{itemize}
+    \item Equilateral: All sides equal, all angles = $60^\circ$
+    \item Isosceles: Two equal sides and angles
+    \item Scalene: All sides and angles different
+\end{itemize}
+
+\textbf{Types by Angles:}
+\begin{itemize}
+    \item Acute: All angles < $90^\circ$
+    \item Right: One angle = $90^\circ$
+    \item Obtuse: One angle > $90^\circ$
+\end{itemize}
+
+\boxed{\textbf{Area Formulas:}}
+\begin{itemize}
+    \item General formula:
+    \[
+    \text{Area} = \frac{1}{2} \times \text{base} \times \text{height}
+    \]
+    \item Heron's formula:
+    \[
+    \sqrt{s(s-a)(s-b)(s-c)}, \quad s = \frac{a+b+c}{2}
+    \]
+\end{itemize}
+\subsection{Pythagorean Theorem}
+
+\boxed{\textbf{Theorem Statement:}}
+For any right triangle:
+\[
+a^2 + b^2 = c^2
+\]
+where:
+\begin{itemize}
+    \item $a$, $b$ are the lengths of the legs
+    \item $c$ is the length of the hypotenuse (side opposite the right angle)
+\end{itemize}
+
+\textbf{Visual Representation:}
+\begin{center}
+\begin{tabular}{c}
+Leg $a$ \\
+$\updownarrow$ \\
+\framebox[1.1\width]{Right Angle $\square$} $\leftarrow$ Hypotenuse $c$ \\
+$\updownarrow$ \\
+Leg $b$ \\
+\end{tabular}
+\end{center}
+
+\boxed{\textbf{Key Properties:}}
+\begin{itemize}
+    \item Applies \textbf{only} to right triangles
+    \item The hypotenuse is always the longest side
+    \item Works in both directions: If $a^2 + b^2 = c^2$, then the triangle is right
+\end{itemize}
+
+\textbf{Example Calculation:}
+For legs $a = 3$ and $b = 4$:
+\[
+3^2 + 4^2 = 9 + 16 = 25 = c^2 \implies c = 5
+\]
+
+\boxed{\textbf{Common Pythagorean Triples:}}
+\begin{itemize}
+    \item (3, 4, 5) and its multiples (6, 8, 10), etc.
+    \item (5, 12, 13)
+    \item (7, 24, 25)
+    \item (8, 15, 17)
+\end{itemize}
+
+\textbf{Applications:}
+\begin{itemize}
+    \item Finding distances in coordinate geometry
+    \item Construction and architecture
+    \item Navigation and surveying
+\end{itemize}
 \end{document}
